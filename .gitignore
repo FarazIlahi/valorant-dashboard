@@ -1,0 +1,10 @@
+*.xlsx
+*.xls
+*.csv
+*.tsv
+Thumbs.db
+.DS_Store
+__pycache__/
+*.pyc
+*.tmp
+~$*
