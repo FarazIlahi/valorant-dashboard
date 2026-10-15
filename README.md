@@ -19,3 +19,9 @@ Only in-game tags, ranks, mode hours, verification flags, check dates, and stand
 GitHub Pages is normally public. Keep the original workbook outside the repository. AGENTS.md requires data regeneration after agent workbook edits.
 
 Alternate source: python sync_workbook.py --workbook "path/to/workbook.xlsx" --watch --serve
+
+## Automatic GitHub syncing
+
+After the initial authenticated push, run Start GitHub Sync.cmd. Leave its window open on this computer. Saving Excel regenerates data.js, commits only that data file, and pushes it to origin/main. GitHub Pages then redeploys. Failed network/authentication pushes are retried every 60 seconds. Unrelated staged files, unpushed source edits, and diverged history require manual attention; the watcher never force-pushes.
+
+The computer must be awake and the watcher must be running. Closing it stops automatic syncing. GitHub sign-in for the browser and Git on this computer are separate; Finish GitHub Setup.cmd performs the initial push and allows normal Git authentication.
