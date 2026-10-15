@@ -130,3 +130,20 @@ Source-code changes and README updates are reviewed and pushed separately. The a
 ## Straw Hat themes
 
 Use the Straw Hat theme dropdown to choose Luffy, Zoro, Nami, Usopp, Sanji, Chopper, Robin, Franky, Brook, or Jinbe, plus the original Midnight palette. Nami, Chopper, and Franky use softer light surfaces; the others use dark character-inspired palettes. Text contrast is checked across each theme. Charts, status colors, controls, tables, and account details share the selected palette. Your browser remembers the selection when storage is available, and theme changes do not affect filters or account data.
+
+### Reference palette colors
+
+Theme swatches follow the supplied character reference exactly. Surface tints and readable text shades are derived from these colors.
+
+| Character | Primary | Secondary | Accent | Dark / text |
+| --- | --- | --- | --- | --- |
+| Luffy | `#D93832` | `#E8BD65` | `#3276B5` | `#211B19` |
+| Zoro | `#428C45` | `#245438` | `#822D46` | `#191F1A` |
+| Nami | `#F58A28` | `#4C9951` | `#69C5E5` | `#292019` |
+| Usopp | `#C99738` | `#805332` | `#F3E4BD` | `#29221C` |
+| Sanji | `#E8C65B` | `#20232A` | `#3F76A5` | `#13161C` |
+| Chopper | `#EE83AC` | `#62BBDD` | `#A97147` | `#35251F` |
+| Robin | `#8054B3` | `#345598` | `#E3A1C5` | `#201C2D` |
+| Franky | `#42BBD8` | `#D94B43` | `#AAB8C5` | `#202B35` |
+| Brook | `#F2E7CE` | `#24212B` | `#63D7CA` | `#15131B` |
+| Jinbe | `#61A9CD` | `#E49338` | `#343C75` | `#192B3A` |
