@@ -100,7 +100,9 @@ Python 3 and Git are required for automatic GitHub syncing. The exporter uses Py
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Dashboard structure and styling. |
+| `index.html` | Dashboard structure and the theme selector. |
+| `styles.css` | Layout, responsive styles, and all Straw Hat color palettes. |
+| `themes.js` | Applies and remembers the selected theme in the browser. |
 | `app.js` | Filtering, sorting, charts, account details, and periodic data reloads. |
 | `data.js` | Generated public account data read by the website. |
 | `sync_workbook.py` | Reads Excel, exports permitted data, watches saved changes, and optionally commits and pushes updates. |
@@ -124,3 +126,7 @@ python sync_workbook.py --push
 ```
 
 Source-code changes and README updates are reviewed and pushed separately. The automatic watcher only publishes the generated account data.
+
+## Straw Hat themes
+
+Use the Straw Hat theme dropdown to choose Luffy, Zoro, Nami, Usopp, Sanji, Chopper, Robin, Franky, Brook, or Jinbe, plus the original Midnight palette. Nami, Chopper, and Franky use softer light surfaces; the others use dark character-inspired palettes. Text contrast is checked across each theme. Charts, status colors, controls, tables, and account details share the selected palette. Your browser remembers the selection when storage is available, and theme changes do not affect filters or account data.

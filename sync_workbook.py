@@ -150,7 +150,7 @@ def main():
                 self.send_header('Cache-Control','no-store');super().end_headers()
             def do_GET(self):
                 # Serve only public dashboard assets, never the workbook or project scripts.
-                if self.path.split('?')[0] not in ('/','/index.html','/app.js','/data.js'):
+                if self.path.split('?')[0] not in ('/','/index.html','/app.js','/data.js','/styles.css','/themes.js'):
                     self.send_error(404);return
                 super().do_GET()
         server=ThreadingHTTPServer(('127.0.0.1',0),partial(Handler,directory=str(ROOT)))
